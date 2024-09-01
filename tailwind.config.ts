@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        slack_bg: "#5c3b58",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
