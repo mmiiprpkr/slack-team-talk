@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useCurrentUser } from "@/features/auth/hooks/user-current-user";
+import { useCurrentUser } from "@/features/auth/api/user-current-user";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { Loader, LogOutIcon } from "lucide-react";
 
