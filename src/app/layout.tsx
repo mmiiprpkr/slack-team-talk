@@ -7,6 +7,7 @@ import "./globals.css";
 
 import { Modals } from "@/components/modals";
 import { Toaster } from "@/components/ui/sonner";
+import { JotailProvider } from "@/components/jotail-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,11 +28,13 @@ export default function RootLayout({
     <ConvexAuthNextjsServerProvider>
       <html lang="en">
         <body className={inter.className}>
-          <ConvexClientProvider>
-            <Toaster />
-            <Modals />
-            {children}
-          </ConvexClientProvider>
+          <JotailProvider>
+            <ConvexClientProvider>
+              <Toaster />
+              <Modals />
+              {children}
+            </ConvexClientProvider>
+          </JotailProvider>
         </body>
       </html>
     </ConvexAuthNextjsServerProvider>
